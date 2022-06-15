@@ -1,0 +1,11 @@
+{
+  "type": "code",
+  "modid": "blacksmithname",
+  "name": "blacksmithname",
+  "author": "KenigVovan",
+  "description": "To be added",
+  "version": "1.0.3",
+  "dependency": {
+    "game": ""
+  }
+}
