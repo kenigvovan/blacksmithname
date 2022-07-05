@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\blacksmithname\lang\en.json" />
+    <None Include="assets\blacksmithname\lang\ru.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\blacksmithname.cs" />

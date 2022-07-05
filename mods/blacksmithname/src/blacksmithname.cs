@@ -25,7 +25,7 @@ namespace blacksmithname.src
         {
             //DoPlaceBlock
             harmonyInstance = new Harmony(harmonyID);
-            harmonyInstance.Patch(typeof(Vintagestory.GameContent.BlockEntityAnvil).GetMethod("CheckIfFinished"), prefix: new HarmonyMethod(typeof(harmPatches).GetMethod("Prefix_CheckIfFinished")));
+            harmonyInstance.Patch(typeof(Vintagestory.GameContent.BlockEntityAnvil).GetMethod("CheckIfFinished"), transpiler: new HarmonyMethod(typeof(harmPatches).GetMethod("Transpiler_check")));
             harmonyInstance.Patch(typeof(Vintagestory.API.Common.CollectibleObject).GetMethod("GetHeldItemInfo"), postfix: new HarmonyMethod(typeof(harmPatches).GetMethod("Postfix_GetHeldItemInfo")));
             harmonyInstance.Patch(typeof(Vintagestory.API.Common.CollectibleObject).GetMethod("OnCreatedByCrafting"), postfix: new HarmonyMethod(typeof(harmPatches).GetMethod("Prefix_OnCreatedByCrafting")));
         }
